@@ -3,7 +3,7 @@
         $conexao = mysqli_connect("localhost", "matheus19", "", "bd_teste_mobile");
                                 //servidor      usuario    senha  banco de dados
         
-        $id = $_GET['id'];
+        $id = $_POST['id'];
         
         $query="SELECT * FROM tb_pessoa WHERE cd_pessoa = $id";
         
