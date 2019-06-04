@@ -2,7 +2,7 @@
     try{
         $conexao = mysqli_connect("localhost", "matheus19", "", "bd_teste_mobile");
         
-        $id = $_POST['id'];
+        $id = $_GET['id'];
         
         $query = "delete from tb_pessoa where cd_pessoa = '$id'";
         
